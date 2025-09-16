@@ -1,0 +1,233 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ui-Design</title>
+    <link rel="stylesheet" href="css/preloader_animation.css">
+    <link rel="stylesheet" href="css/android-control.css">
+    <link id="navbar-css" rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/android-navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/ui-design.css"
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="pyramid">
+    <!-- Top triangle -->
+    <div class="triangle"></div>
+    
+    <!-- Row of cubes -->
+    <div class="cube top-left"></div>
+    <div class="cube top-right"></div>
+    <div class="cube middle-left"></div>
+     <div class="cube middle-right"></div>
+     <div class="cube middle-middle"></div>
+    <div class="cube bottom-left"></div>
+    <div class="cube bottom-right"></div>
+  </div>
+</div>
+<script src="js/remove_preloader.js"></script>
+<div id="on-desktop" class="desktop-nav">
+      <nav class="navbar">
+            <a href="#home" class="logo">Hitesh Shrivastava</a>
+            <ul>
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#about">About Me</a></li>
+              <li><a href="index.html#certificates">Certificates</a></li>
+              <li><a href="3dmodels.html">3D Models</a></li>
+              <li><a href="gamedemos.html">Game Demos</a></li>
+              <li><a href="aiprojects.html">AI Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      <div id="on-mobile" class="mobile-nav">
+         <nav id="nav-menu" class="nav-menu nav-menu-hidden">
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#about">About Me</a></li>
+              <li><a href="index.html#certificates">Certificates</a></li>
+              <li><a href="3dmodels.html">3D Models</a></li>
+              <li><a href="gamedemos.html">Game Demos</a></li>
+              <li><a href="aiprojects.html">AI Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+        
+       <nav class="android-navbar">
+          <a href="index.html#home" class="android-logo">Hitesh Shrivastava</a>
+          <button id="menu-btn" class="hamburger-button">
+            <img src="assets/navbar.svg" alt="Menu">
+          </button>
+          <button id="menu-return" class="hamburger-button-open hamburger-button-hidden">
+            <img src="assets/return.svg" alt="Menu">
+          </button>
+        </nav>
+      </div>
+      <script src="js/android-control.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src="js/menu-button.js"></script>
+
+
+  <div class="ui-background">
+    <section class="ui-intro">
+      <h1 class="ui-title">UI & Sprite Design Showcase</h1>
+      <p class="ui-paragraph">
+        I don’t have professional training in UI/UX, but I’ve designed interfaces and sprites 
+        for my hyper-casual and hybrid-casual games using GIMP and Photopea. 
+        This page is a collection of my work: UI menus, background designs, and game sprites. 
+        Some are functional pieces made for published projects, while others are experiments 
+        I created purely for fun and learning.
+      </p>
+    </section>
+
+    <!-- Section 1: Game UI & Sprites -->
+    <section class="ui-section-box">
+  <h2 class="ui-section-title">Game UI & Sprite Design</h2>
+  <p class="ui-section-text">Here are the assets I created specifically for my game projects.</p>
+
+  <!-- Background UI -->
+  <div class="ui-subsection bg-ui">
+    <h3 class="ui-subsection-title">Background UI</h3>
+    <div class="ui-slider">
+      <button class="arrow left" onclick="prevImage('game-bg')">
+        <img src="assets/left-arrow.svg" alt="Previous">
+      </button>
+      <div class="ui-container">
+        <img id="game-bg-image" src="ui-images/menu.png" alt="Background UI">
+      </div>
+      <button class="arrow right" onclick="nextImage('game-bg')">
+        <img src="assets/right-arrow.svg" alt="Next">
+      </button>
+    </div>
+    <div class="dots" id="game-bg-dots"></div>
+  </div>
+
+  <!-- Sprites -->
+  <div class="ui-subsection bg-ui">
+    <h3 class="ui-subsection-title">Sprites</h3>
+    <div class="ui-slider">
+      <button class="arrow left" onclick="prevImage('game-sprites')">
+        <img src="assets/left-arrow.svg" alt="Previous">
+      </button>
+      <div class="ui-container">
+        <img id="game-sprites-image" src="ui-images/button.png" alt="Game Sprite">
+      </div>
+      <button class="arrow right" onclick="nextImage('game-sprites')">
+        <img src="assets/right-arrow.svg" alt="Next">
+      </button>
+    </div>
+    <div class="dots" id="game-sprites-dots"></div>
+  </div>
+
+  <!-- Menu UI -->
+  <div class="ui-subsection bg-ui">
+    <h3 class="ui-subsection-title">Menu UI</h3>
+    <div class="ui-slider">
+      <button class="arrow left" onclick="prevImage('game-menu')">
+        <img src="assets/left-arrow.svg" alt="Previous">
+      </button>
+      <div class="ui-container">
+        <img id="game-menu-image" src="ui-images/menu.png" alt="Menu UI">
+      </div>
+      <button class="arrow right" onclick="nextImage('game-menu')">
+        <img src="assets/right-arrow.svg" alt="Next">
+      </button>
+    </div>
+    <div class="dots" id="game-menu-dots"></div>
+  </div>
+</section>
+
+
+  <section class="ui-section-box">
+  <h2 class="ui-section-title">Fun & Knowledge UI Experiments</h2>
+  <p class="ui-section-text">These designs were made while exploring new styles, practicing tools, and experimenting with creative layouts.</p>
+
+  <!-- Background UI -->
+  <div class="ui-subsection bg-ui">
+    <h3 class="ui-subsection-title">Background UI</h3>
+    <div class="ui-slider">
+      <button class="arrow left" onclick="prevImage('fun-bg')">
+        <img src="assets/left-arrow.svg" alt="Previous">
+      </button>
+      <div class="ui-container">
+        <img id="fun-bg-image" src="ui-assets/fun-bg-1.png" alt="Fun Background UI">
+      </div>
+      <button class="arrow right" onclick="nextImage('fun-bg')">
+        <img src="assets/right-arrow.svg" alt="Next">
+      </button>
+    </div>
+    <div class="dots" id="fun-bg-dots"></div>
+  </div>
+
+  <!-- Sprites -->
+  <div class="ui-subsection bg-ui">
+    <h3 class="ui-subsection-title">Sprites</h3>
+    <div class="ui-slider">
+      <button class="arrow left" onclick="prevImage('fun-sprites')">
+        <img src="assets/left-arrow.svg" alt="Previous">
+      </button>
+      <div class="ui-container">
+        <img id="fun-sprites-image" src="ui-assets/fun-sprite-1.png" alt="Fun Sprite">
+      </div>
+      <button class="arrow right" onclick="nextImage('fun-sprites')">
+        <img src="assets/right-arrow.svg" alt="Next">
+      </button>
+    </div>
+    <div class="dots" id="fun-sprites-dots"></div>
+  </div>
+
+  <!-- Menu UI -->
+  <div class="ui-subsection bg-ui">
+    <h3 class="ui-subsection-title">Menu UI</h3>
+    <div class="ui-slider">
+      <button class="arrow left" onclick="prevImage('fun-menu')">
+        <img src="assets/left-arrow.svg" alt="Previous">
+      </button>
+      <div class="ui-container">
+        <img id="fun-menu-image" src="ui-assets/fun-menu-1.png" alt="Fun Menu UI">
+      </div>
+      <button class="arrow right" onclick="nextImage('fun-menu')">
+        <img src="assets/right-arrow.svg" alt="Next">
+      </button>
+    </div>
+    <div class="dots" id="fun-menu-dots"></div>
+  </div>
+</section>
+
+  </div>
+<script src="js/ui-design.js"></script>
+    
+    <footer class="footer">
+  <div class="footer-content">
+    <h2 class="footer-title">Contact Me</h2>
+    <h4>
+      Free to send me a message here: 
+      <a href="Contact Me.html">Contact Me</a>.  
+      I'll try to respond as quick as I can!  
+      I'm also on this social media thing, if you need me there 👇
+    </h4>
+
+    <div class="footer-socials">
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="assets/twitter.svg" alt="Twitter">
+      </a>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="assets/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <img src="assets/linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
+    <div class="footer-socials-instagram">
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="assets/instagram.svg" alt="Instagram">
+      </a>
+    </div>
+    <p>© 2025 Hitesh Shrivastava. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

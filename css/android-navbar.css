@@ -1,0 +1,180 @@
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}/* Hide the normal navbar ul on Android by default */
+.android-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.7); /* transparent black */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px 40px;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+
+}
+.android-navbar ul{
+  /*display: none;*/
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Show the logo aligned left */
+.android-logo {
+  margin-right: 80%;
+  text-align: left;
+  color: white;
+  font-size: 1.8rem;   /* 2x bigger */
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s;
+  z-index: 11;
+}
+
+/* Navbar button container */
+.hamburger-button {
+  cursor: pointer;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  top: 8px;
+  left: 90vw;
+  z-index: 12;
+  position: fixed;
+  border-radius: 40px;
+  border: 4px solid rgb(112, 112, 112);
+}
+.hamburger-button-none{
+  display: none;
+}
+.hamburger-button img{
+  width: 90%;
+  height: 100%;
+}
+
+.hamburger-button-open {
+  cursor: pointer;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  top: 4px;
+  left: 40%;
+  z-index: 12;
+  position: fixed;
+  border-radius: 40px;
+  border: 4px solid rgb(112, 112, 112);
+}
+.hamburger-button-hidden{
+display: none;
+}
+.hamburger-button-open img{
+  width: 90%;
+  height: 100%;
+}
+/* Dropdown menu styles */
+.android-navbar .dropdown-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 75vw;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1100;
+  overflow-y: auto;
+}
+
+/* Show dropdown when active */
+.android-navbar .dropdown-menu.active {
+  transform: translateX(0);
+}
+
+/* Dropdown menu list */
+.android-navbar .dropdown-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.android-navbar .dropdown-menu ul li a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.android-navbar .dropdown-menu ul li a:hover {
+  color: #a64dff;
+}
+/* Overlay container */
+.nav-menu {
+  height: 100%;
+  width: 60vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgb(46, 46, 46);
+  color: rgb(248, 248, 248);
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 50px; /* space from top */
+  z-index: 10;
+  transition: transform 0.5s ease-in-out;
+}
+.nav-menu-hidden{
+  transform: translateX(100%);
+}
+
+/* List inside nav-menu */
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin: 15px 0;
+}
+
+/* Links */
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.nav-menu a:hover {
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Active (clicked) effect */
+.nav-menu a:active,
+.nav-menu a.active {
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+}

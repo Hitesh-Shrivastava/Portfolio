@@ -1,0 +1,226 @@
+/* Background wrapper */
+.background {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 250, 250);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Split layout */
+.split-container-grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 80vh;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 252, 252, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Left side (profile + text + socials) */
+.left-half-grid {
+  background-color: #1f0050;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  display: flex;
+  flex-direction: column;   /* stack vertically */
+  justify-content: center;  /* vertical center */
+  align-items: center;      /* horizontal center */
+  padding: 1rem;
+  text-align: center;
+}
+
+.contact-profile-image {
+  width: 70%;
+  max-width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #949494;
+  box-shadow: 0px 0px 15px rgb(255, 255, 255);
+  margin-bottom: 1rem;
+}
+
+.intro-text-h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Social icons in left half */
+.footer-socials {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-socials a img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1); /* makes SVG white */
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.footer-socials a img:hover {
+  transform: scale(1.2);
+  filter: brightness(0) invert(1) sepia(1) hue-rotate(20deg) saturate(5);
+  /* hover effect: glowing orange */
+}
+
+.resume-btn-contact{ 
+    height: 60px; 
+    width: 200px; 
+    background-color: black; 
+    color: whitesmoke; 
+    border-radius: 25px; 
+    border: 2px solid rgb(51, 51, 51);
+    padding: 10px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+} 
+.resume-btn-contact:hover{ 
+    color: rgb(247, 3, 247);
+    font-size: 0.9rem; 
+    width: 195px; 
+    height: 55px; 
+}
+
+/* Right side (form area) */
+.right-half-grid {
+  background-color: #fff;
+  color: black;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.email-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* Contact form */
+.form-container {
+  background: rgb(21,165,165);
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+  border: 4px outset #949494;
+}
+
+.name-contact,
+.message-contact {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border: none;
+  font-size: 1rem;
+  background-color: #cecece;
+}
+
+.message-contact {
+  height: 120px;
+  resize: none;
+  background-color: #cecece;
+}
+
+.submit-contact {
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  border: 2px solid bisque;
+  background: rgb(51, 51, 51);
+  color: whitesmoke;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit-contact:hover {
+  color: aqua;
+  transform: scale(0.95);
+}
+
+.contact-divider {
+  background: rgb(51, 51, 51);
+  border-radius: 10px;
+  width: 100%;
+  height: 3px;
+  border: 1px outset;
+  margin: 1rem 0;
+}
+
+.name-contact::placeholder,
+.message-contact::placeholder {
+  transition: color 0.3s ease;
+  color: rgba(85, 85, 85, 0.774);
+  text-align: center;
+}
+
+.name-contact:focus::placeholder,
+.message-contact:focus::placeholder {
+  color: transparent;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .split-container-grid {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .left-half-grid {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .right-half-grid {
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-profile-image {
+    max-width: 180px;
+  }
+}
+

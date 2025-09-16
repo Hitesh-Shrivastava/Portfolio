@@ -1,0 +1,28 @@
+.demo-background {
+  min-height: 100vh;  
+  width: 100%;
+  background: rgb(22, 22, 22);
+  padding-bottom: 100px; 
+}
+
+.demo-intro {
+  width: 95%;
+  background-color: #1f0050;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 20px;
+  border-radius: 12px;
+}
+
+.demo-title{
+    font-size: 3rem;
+    color: #6a0dad;
+    padding-top: 45px;
+    border: 2px outset;
+    text-shadow: 0 0 15px rgba(0, 195, 255, 0.603);
+}
+
+.demo-paragraph{
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Models</title>
+    <link rel="stylesheet" href="css/preloader_animation.css">
+    <link rel="stylesheet" href="css/android-control.css">
+    <link id="navbar-css" rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/android-navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/3d-model.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="pyramid">
+    <!-- Top triangle -->
+    <div class="triangle"></div>
+    
+    <!-- Row of cubes -->
+    <div class="cube top-left"></div>
+    <div class="cube top-right"></div>
+    <div class="cube middle-left"></div>
+     <div class="cube middle-right"></div>
+     <div class="cube middle-middle"></div>
+    <div class="cube bottom-left"></div>
+    <div class="cube bottom-right"></div>
+  </div>
+</div>
+<script src="js/remove_preloader.js"></script>
+<div id="on-desktop" class="desktop-nav desktop-hider">
+      <nav class="navbar">
+            <a href="#home" class="logo">Hitesh Shrivastava</a>
+            <ul>
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#about">About Me</a></li>
+              <li><a href="index.html#certificates">Certificates</a></li>
+              <li><a href="uidesigns.html">UI Design</a></li>
+              <li><a href="gamedemos.html">Game Demos</a></li>
+              <li><a href="aiprojects.html">AI Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      <div id="on-mobile" class="mobile-nav">
+         <nav id="nav-menu" class="nav-menu nav-menu-hidden">
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+              <li><a href="index.html#about">About Me</a></li>
+              <li><a href="index.html#certificates">Certificates</a></li>
+              <li><a href="uidesigns.html">UI Design</a></li>
+              <li><a href="gamedemos.html">Game Demos</a></li>
+              <li><a href="aiprojects.html">AI Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+        
+       <nav class="android-navbar">
+          <a href="index.html#home" class="android-logo">Hitesh Shrivastava</a>
+          <button id="menu-btn" class="hamburger-button">
+            <img src="assets/navbar.svg" alt="Menu">
+          </button>
+          <button id="menu-return" class="hamburger-button-open hamburger-button-hidden">
+            <img src="assets/return.svg" alt="Menu">
+          </button>
+        </nav>
+      </div>
+      <script src="js/android-control.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src="js/menu-button.js"></script>
+
+
+
+<div class="model-background">
+
+    <!-- Intro Section -->
+    <div class="model-intro">
+      <h1 class="model-title">3D Models Showcase</h1>
+      <p class="model-paragraph">
+       This page presents a selection of low-poly 3D models I created in Blender, specifically tailored for hybrid and hyper-casual mobile games. While I don’t have formal professional training in 3D modeling, I’ve independently explored the workflow of modeling, texturing, and optimizing assets to fit the unique requirements of lightweight game environments. Each model is designed with performance in mind, ensuring smooth gameplay without compromising on style or creativity. My focus has been on creating clear, readable shapes that work well in fast-paced casual experiences, where visual simplicity is just as important as functionality. These models reflect my ongoing journey as a game developer and highlight the practical skills I’ve gained while building and testing my own projects.
+        Browse through environments, weapons, roads, and props, each designed with simplicity and 
+        optimization for gameplay in mind.
+      </p>
+    </div>
+
+    <!-- Environment Section -->
+    <div class="model-section">
+      <h2 class="model-section-title">Environment</h2>
+      <div class="model-slider">
+        <button class="arrow left" onclick="prevModel('environment')">
+          <img src="assets/left-arrow.svg" alt="Previous">
+        </button>
+
+        <div class="model-container">
+          <model-viewer id="environment-viewer" src="3d-assets/leaves.glb" 
+            camera-controls auto-rotate></model-viewer>
+        </div>
+
+        <button class="arrow right" onclick="nextModel('environment')">
+          <img src="assets/right-arrow.svg" alt="Next">
+        </button>
+      </div>
+      <div class="dots" id="environment-dots"></div>
+    </div>
+
+    <!-- Weapons Section -->
+    <div class="model-section">
+      <h2 class="model-section-title">Weapons</h2>
+      <div class="model-slider">
+        <button class="arrow left" onclick="prevModel('weapons')">
+          <img src="assets/left-arrow.svg" alt="Previous">
+        </button>
+
+        <div class="model-container">
+          <model-viewer id="weapons-viewer" src="3d-assets/leaves.glb" 
+            camera-controls auto-rotate></model-viewer>
+        </div>
+
+        <button class="arrow right" onclick="nextModel('weapons')">
+          <img src="assets/right-arrow.svg" alt="Next">
+        </button>
+      </div>
+      <div class="dots" id="weapons-dots"></div>
+    </div>
+
+    <!-- Roads Section -->
+    <div class="model-section">
+      <h2 class="model-section-title">Roads</h2>
+      <div class="model-slider">
+        <button class="arrow left" onclick="prevModel('roads')">
+          <img src="assets/left-arrow.svg" alt="Previous">
+        </button>
+
+        <div class="model-container">
+          <model-viewer id="roads-viewer" src="3d-assets/leaves.glb" 
+            camera-controls auto-rotate></model-viewer>
+        </div>
+
+        <button class="arrow right" onclick="nextModel('roads')">
+          <img src="assets/right-arrow.svg" alt="Next">
+        </button>
+      </div>
+      <div class="dots" id="roads-dots"></div>
+    </div>
+
+    <!-- Props Section -->
+    <div class="model-section">
+      <h2 class="model-section-title">Props</h2>
+      <div class="model-slider">
+        <button class="arrow left" onclick="prevModel('props')">
+          <img src="assets/left-arrow.svg" alt="Previous">
+        </button>
+
+        <div class="model-container">
+          <model-viewer id="props-viewer" src="3d-assets/leaves.glb" 
+            camera-controls auto-rotate></model-viewer>
+        </div>
+
+        <button class="arrow right" onclick="nextModel('props')">
+          <img src="assets/right-arrow.svg" alt="Next">
+        </button>
+      </div>
+      <div class="dots" id="props-dots"></div>
+    </div>
+
+  </div>
+<script src="js/3d-model.js"></script>
+    <footer class="footer">
+  <div class="footer-content">
+    <h2 class="footer-title">Contact Me</h2>
+    <h4>
+      Free to send me a message here: 
+      <a href="Contact Me.html">Contact Me</a>.  
+      I'll try to respond as quick as I can!  
+      I'm also on this social media thing, if you need me there 👇
+    </h4>
+
+    <div class="footer-socials">
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+        <img src="assets/twitter.svg" alt="Twitter">
+      </a>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="assets/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <img src="assets/linkedin.svg" alt="LinkedIn">
+      </a>
+    </div>
+    <div class="footer-socials-instagram">
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="assets/instagram.svg" alt="Instagram">
+      </a>
+    </div>
+    <p>© 2025 Hitesh Shrivastava. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

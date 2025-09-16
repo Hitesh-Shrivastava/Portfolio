@@ -1,0 +1,112 @@
+/* Footer */
+.section {
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #444; 
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  clear: both;
+  position: relative;
+  z-index: 10;
+}
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.footer-socials {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 25px;
+}
+
+.footer-socials a img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1); 
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.footer-socials a img:hover {
+  transform: scale(1.2);
+  filter: brightness(0) invert(1) sepia(1) hue-rotate(20deg) saturate(5); 
+}
+
+.footer-socials-instagram {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.footer-socials-instagram a img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.footer-socials-instagram a img:hover {
+  transform: scale(1.2);
+  filter: brightness(0.5) invert(1) sepia(1) hue-rotate(20deg) saturate(2); 
+}
+
+/*on android show*/
+@media (max-width: 768px) {
+.footer {
+  background-color: #444; 
+  color: white;
+  padding: 20px 0;
+  width: 100vw;
+  text-align: center;
+  margin-top: 0px;
+  z-index: 100;
+}
+  .footer-title {
+    font-size: 1.8rem; 
+  }
+
+  .footer p {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .footer-socials {
+    gap: 15px;
+  }
+
+  .footer-socials a img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-socials-instagram a img {
+    width: 45px;
+    height: 45px;
+  }
+}

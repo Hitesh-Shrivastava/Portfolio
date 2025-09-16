@@ -1,0 +1,145 @@
+.ui-background {
+  min-height: 100vh;  
+  width: 100%;
+  background: rgb(22, 22, 22);
+  padding-bottom: 100px; 
+}
+
+.ui-intro {
+  width: 95%;
+  background-color: #1f0050;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 20px;
+  border-radius: 12px;
+}
+
+.ui-title{
+    font-size: 3rem;
+    color: #6a0dad;
+    padding-top: 45px;
+    border: 2px outset;
+    text-shadow: 0 0 15px rgba(0, 195, 255, 0.603);
+}
+
+.ui-paragraph{
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}
+
+.ui-section-box {
+    width: 90vw;
+    margin: 40px auto;
+    padding: 30px;
+    background: #2a0065;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 195, 255, 0.2);
+    text-align: center;
+}
+
+.ui-section-title {
+    font-size: 2rem;
+    color: #00c3ff;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(0, 195, 255, 0.6);
+}
+
+.ui-section-text {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.ui-subsection {
+    margin-top: 30px;
+}
+
+.ui-subsection-title {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.ui-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.ui-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.ui-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #6a0dad;
+  box-shadow: 0 0 15px rgba(106, 13, 173, 0.6);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.ui-container img:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 1024px) {
+  /* For menu UI images */
+  .menu-ui img {
+    max-width: 600px;   
+    max-height: 400px; 
+    object-fit: contain;
+  }
+
+  /* For sprites UI images */
+  .sprite-ui img {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  /* For background UI images */
+  .bg-ui img {
+    max-width: 800px;
+    max-height: 450px;
+    object-fit: cover;
+  }
+}
+
+/* Arrow buttons */
+.arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+/* Dots indicator */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+.dots .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #888;
+    cursor: pointer;
+}
+
+.dots .dot.active {
+    background: #00c3ff;
+}
