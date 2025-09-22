@@ -1,12 +1,12 @@
 // Store images for each subsection
 const uiImages = {
   "game-bg": ["ui-images/menu.png", "ui-images/menu2.png", "ui-images/menu.png"],
-  "game-sprites": ["ui-images/button.png", "ui-images/button2.png", "ui-images/button.png"],
-  "game-menu": ["ui-images/button.png", "ui-images/button2.png"],
+  "game-sprites": ["ui-images/button.png", "ui-images/button-2.png", "ui-images/button.png"],
+  "game-menu": ["ui-images/menu.png", "ui-images/button2.png"],
 
   "fun-bg": ["ui-images/menu.png", "ui-images/menu2.png"],
-  "fun-sprites": ["ui-images/button.png", "ui-images/button2.png", "ui-images/button.png"],
-  "fun-menu": ["ui-images/menu2.png", "ui-images/menu.png"]
+  "fun-sprites": ["ui-images/button-2.png", "ui-images/button2.png", "ui-images/button.png"],
+  "fun-menu": ["ui-images/menu.png", "ui-images/menu_2.png","ui-images/menu-3.png"]
 };
 
 // Track current index for each subsection

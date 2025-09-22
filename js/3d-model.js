@@ -18,8 +18,7 @@ const modelIndices = {
 window.onload = () => {
   for (const section in modelData) {
     const dotsContainer = document.getElementById(`${section}-dots`);
-    
-    // Clear dots in case of re-render
+
     dotsContainer.innerHTML = "";
 
     modelData[section].forEach((_, i) => {
