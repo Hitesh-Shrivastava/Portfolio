@@ -108,15 +108,21 @@
         </p>
         <p>Mobile No. - +91 77830 97274</p>
       </div>
+      
       <div class="form-container">
-        <form name="contact" method="post" data-netlify="true">
-          <input type="text" class="name-contact" id="fname" name="fname" placeholder="Your Name"><br>
-          <input type="text" class="name-contact" id="lname" name="lname" placeholder="Email-address"><br>
-          <input type="text" class="message-contact" id="message" name="message" placeholder="Your Message"><br><br>
+         <form 
+          name="contact" 
+          action="https://formspree.io/f/mblzrkzz" 
+          method="POST"
+          id="contact-form">
+          <input type="text" class="name-contact" name="name" placeholder="Your Name" required><br>
+          <input type="email" class="name-contact" name="email" placeholder="Email Address" required><br>
+           <textarea class="message-contact" name="message" placeholder="Your Message" required></textarea><br><br>
           <input type="submit" class="submit-contact" value="Submit">
           </form> 
-      </div>
+        </div>
     </div>
+    <script src="js/form-submit.js"></script>
 
   </div>
 </div>
