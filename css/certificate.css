@@ -1,0 +1,66 @@
+/* Certificates Section */
+.certificate-section {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.certificate-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+/* Grid Layout */
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+}
+
+/* Certificate Card */
+.certificate-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Certificate Image */
+.certificate-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 0.8rem;
+  border: 2px solid #ccc;
+}
+
+/* Certificate Text */
+.certificate-card p {
+  font-size: 1rem;
+  color: #ddd;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certificate-title {
+    font-size: 1.6rem;
+  }
+
+  .certificate-card p {
+    font-size: 0.9rem;
+  }
+}

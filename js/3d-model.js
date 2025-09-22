@@ -1,9 +1,9 @@
 // Models data for each section
 const modelData = {
-  environment: ["models/environment1.glb", "models/environment2.glb"],
-  weapons: ["models/weapon1.glb", "models/weapon2.glb", "models/weapon3.glb"],
-  roads: ["models/road1.glb", "models/road2.glb"],
-  props: ["models/prop1.glb", "models/prop2.glb", "models/prop3.glb"]
+  environment: ["3d-assets/leaves.glb", "models/environment2.glb"],
+  weapons: ["3d-assets/weapon.glb", "models/weapon2.glb", "models/weapon3.glb"],
+  roads: ["3d-assets/road-first.glb", "models/road2.glb"],
+  props: ["3d-assets/egg.glb", "models/prop2.glb", "models/prop3.glb"]
 };
 
 const modelIndices = {
