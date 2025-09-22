@@ -3,7 +3,7 @@
   downloadBtn.addEventListener('click', () => {
     // Create a temporary link element
     const link = document.createElement('a');
-    link.href = 'Hitesh-Shrivastava-Resume.pdf';
+    link.href = 'pdf/Hitesh-Shrivastava-Resume.pdf';
     link.download = 'Hitesh_Shrivastava_Resume.pdf'; 
     document.body.appendChild(link);
     link.click();
