@@ -14,17 +14,26 @@ const modelIndices = {
 };
 
 // Initialize dots and first models
+// Initialize dots and first models
 window.onload = () => {
   for (const section in modelData) {
     const dotsContainer = document.getElementById(`${section}-dots`);
+    
+    // Clear dots in case of re-render
+    dotsContainer.innerHTML = "";
+
     modelData[section].forEach((_, i) => {
       const dot = document.createElement("span");
       if (i === 0) dot.classList.add("active");
       dot.onclick = () => setModel(section, i);
       dotsContainer.appendChild(dot);
     });
+
+    // ✅ Set the first model for this section
+    setModel(section, 0);
   }
 };
+
 
 // Switch model
 function setModel(section, index) {
