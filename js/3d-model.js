@@ -2,8 +2,8 @@
 const modelData = {
   environment: ["3d-assets/leaves.glb", "models/environment2.glb"],
   weapons: ["3d-assets/weapon.glb", "models/weapon2.glb", "models/weapon3.glb"],
-  roads: ["3d-assets/road-first.glb", "models/road2.glb"],
-  props: ["3d-assets/egg.glb", "models/prop2.glb", "models/prop3.glb"]
+  roads: ["3d-assets/road-first.glb", "3d-assets/road4.glb"],
+  props: ["3d-assets/egg.glb", "3d-assets/nest-3glb.glb", "3d-assets/secon-obj-2.glb"]
 };
 
 const modelIndices = {
