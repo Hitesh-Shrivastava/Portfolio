@@ -71,15 +71,34 @@
         <script src="js/menu-button.js"></script>
 
 <div class="demo-background">
-    <section class="demo-intro">
+  <section class="demo-intro">
     <h1 class="demo-title">Game Demos & Ongoing Projects</h1>
     <p class="demo-paragraph">
-     Here you can explore the game demos I have built from scratch in Unity as a solo developer. These WebGL versions showcase my work in hyper-casual and hybrid-casual games, with a focus on runner and puzzle genres. Each demo reflects my ability to take an idea from concept to a playable experience, handling everything from coding and mechanics to visuals and polish. Alongside completed projects, I am also sharing the games I’m currently developing, giving a look at my ongoing creative journey. While my main experience so far has been in casual games, I am excited to expand into different genres, experiment with new gameplay mechanics, and keep challenging myself as a developer. This section is not only a showcase of what I have created but also a glimpse into where I am headed next.
-     </p>
+      Here you can explore the game demos I have built from scratch in Unity as a solo developer. These WebGL versions showcase my work in hyper-casual and hybrid-casual games, with a focus on runner and puzzle genres. Each demo reflects my ability to take an idea from concept to a playable experience, handling everything from coding and mechanics to visuals and polish. Alongside completed projects, I am also sharing the games I’m currently developing, giving a look at my ongoing creative journey. While my main experience so far has been in casual games, I am excited to expand into different genres, experiment with new gameplay mechanics, and keep challenging myself as a developer.
+    </p>
+  </section>
+
+  <!-- Game Demo Section -->
+  <section class="demo-section">
+    <h2 class="demo-section-title">Game 1: Runner Adventure</h2>
+    <div class="demo-slider">
+      <button class="arrow left" onclick="prevDemo('game1')">
+        <img src="assets/left-arrow.svg" alt="Previous">
+      </button>
+
+      <div class="demo-container">
+        <img id="game1-image" src="game-demo/screen-shot 1.PNG" alt="Game Demo 1">
+      </div>
+
+      <button class="arrow right" onclick="nextDemo('game1')">
+        <img src="assets/right-arrow.svg" alt="Next">
+      </button>
+    </div>
+    <div class="dots" id="game1-dots"></div>
+    <button class="info-btn" onclick="alert('Game 1 playable WebGL demo link or description')">More Info</button>
   </section>
 </div>
-<button><a href="my first build/index.html"></a>Play</button>
-
+<script src="js/game-demo.js"></script>
     
     <footer class="footer">
   <div class="footer-content">
@@ -92,18 +111,18 @@
     </h4>
 
     <div class="footer-socials">
-      <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+      <a href="https://x.com/Hitesh_Shrivast" target="_blank" aria-label="Twitter">
         <img src="assets/twitter.svg" alt="Twitter">
       </a>
-      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+      <a href="https://www.facebook.com/hitesh.srivastava.737/" target="_blank" aria-label="Facebook">
         <img src="assets/facebook.svg" alt="Facebook">
       </a>
-      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+      <a href="www.linkedin.com/in/hitesh-shrivastava-profile" target="_blank" aria-label="LinkedIn">
         <img src="assets/linkedin.svg" alt="LinkedIn">
       </a>
     </div>
     <div class="footer-socials-instagram">
-        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <a href="https://www.instagram.com/hitesh_srivastav/" target="_blank" aria-label="Instagram">
         <img src="assets/instagram.svg" alt="Instagram">
       </a>
     </div>
